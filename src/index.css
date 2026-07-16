@@ -73,8 +73,31 @@
 }
 
 @media (max-width: 768px) {
-  .blur-3xl { filter: blur(20px); }
-  .blur-2xl { filter: blur(16px); }
+  .blur-3xl { filter: blur(12px) !important; }
+  .blur-2xl { filter: blur(10px) !important; }
+  .blur-xl { filter: blur(8px) !important; }
+  
+  /* Disable heavy GPU-taxing box shadows on mobile to keep scrolling super lightweight and glitch-free */
+  .shadow-2xl, .shadow-xl, .shadow-lg, .shadow-md, .shadow, .glow-orange, .glow-orange-lg {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  
+  /* Add subtle borders instead of shadows on mobile to keep a premium bento card aesthetic */
+  .bg-brand-card, .bento-card {
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  }
+
+  /* Disable hover scale transformations on mobile touch screens to prevent re-rasterization lags */
+  .hover\:scale-\[1\.01\]:hover,
+  .hover\:scale-105:hover,
+  .hover\:scale-\[1\.02\]:hover,
+  .group:hover .group-hover\:scale-105,
+  .group:hover .group-hover\:scale-110 {
+    transform: none !important;
+    -webkit-transform: none !important;
+  }
 }
 
 

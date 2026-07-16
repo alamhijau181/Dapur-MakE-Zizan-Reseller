@@ -14,7 +14,7 @@ export default function BenefitsSection() {
   return (
     <section id="benefits" className="py-24 bg-black border-b border-brand-muted relative overflow-hidden isolate">
       {/* Background flare */}
-      <div className="absolute top-1/2 right-10 -translate-y-1/2 w-48 h-48 bg-brand-orange/5 rounded-full blur-xl pointer-events-none"></div>
+      <div className="hidden md:block absolute top-1/2 right-10 -translate-y-1/2 w-48 h-48 bg-brand-orange/5 rounded-full blur-xl pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -69,7 +69,7 @@ export default function BenefitsSection() {
 
         {/* Reseller Discount Tiers Visualizer - Big Bento Card */}
         <div className="mt-12 p-8 sm:p-10 rounded-3xl bg-brand-card border border-brand-border-light shadow-2xl relative overflow-hidden group">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-brand-orange/[0.02] rounded-full blur-xl pointer-events-none"></div>
+          <div className="hidden md:block absolute top-0 right-0 w-64 h-64 bg-brand-orange/[0.02] rounded-full blur-xl pointer-events-none"></div>
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             <div className="lg:col-span-5">

@@ -12,18 +12,18 @@ export default function Hero({ onScrollToSection }: HeroProps) {
   return (
     <section id="home" className="relative py-20 lg:py-32 overflow-hidden border-b border-brand-muted isolate">
       {/* Background overlay */}
-      <div className="absolute inset-0 z-0 opacity-15 pointer-events-none">
+      <div className="absolute inset-0 z-0 opacity-10 pointer-events-none">
         <img
           src={bolenImg}
           alt="Rustic Kitchen"
-          className="w-full h-full object-cover filter grayscale contrast-125"
+          className="w-full h-full object-cover"
           referrerPolicy="no-referrer"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/80 to-transparent"></div>
+        <div className="absolute inset-0 bg-brand-dark/90"></div>
       </div>
 
       {/* Decorative Radial Gradient */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-brand-orange/5 rounded-full blur-xl pointer-events-none"></div>
+      <div className="hidden md:block absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-brand-orange/5 rounded-full blur-xl pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Main Bento Grid layout */}
@@ -38,7 +38,7 @@ export default function Hero({ onScrollToSection }: HeroProps) {
             className="lg:col-span-7 bg-brand-card rounded-3xl p-8 sm:p-10 border border-brand-border-light flex flex-col justify-between relative overflow-hidden group hover:border-brand-orange/30 transition-all duration-300 shadow-2xl"
           >
             {/* Background spotlight */}
-            <div className="absolute top-0 right-0 w-48 h-48 bg-brand-orange/5 rounded-full blur-xl pointer-events-none group-hover:bg-brand-orange/10 transition-colors"></div>
+            <div className="hidden md:block absolute top-0 right-0 w-48 h-48 bg-brand-orange/5 rounded-full blur-xl pointer-events-none group-hover:bg-brand-orange/10 transition-colors"></div>
 
             <div>
               <div className="flex flex-col-reverse sm:flex-row justify-between items-stretch sm:items-start gap-6 mb-6">
@@ -88,7 +88,7 @@ export default function Hero({ onScrollToSection }: HeroProps) {
             className="lg:col-span-5 bg-gradient-to-br from-brand-orange-dark to-orange-950 rounded-3xl p-8 relative overflow-hidden flex flex-col justify-between group shadow-2xl border border-brand-orange/20"
           >
             {/* Background decorative circles */}
-            <div className="absolute -right-8 -bottom-8 w-32 h-32 bg-black/10 rounded-full blur-xl"></div>
+            <div className="hidden md:block absolute -right-8 -bottom-8 w-32 h-32 bg-black/10 rounded-full blur-xl"></div>
             
             <div className="z-10">
               <span className="px-3 py-1 bg-white/10 border border-white/20 text-white rounded-full text-[9px] font-bold uppercase tracking-wider">
@@ -174,9 +174,9 @@ export default function Hero({ onScrollToSection }: HeroProps) {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="lg:col-span-6 bg-brand-card rounded-3xl p-6 sm:p-8 border border-brand-border-light grid grid-cols-1 sm:grid-cols-3 gap-4 items-center relative overflow-hidden group shadow-2xl"
+            className="lg:col-span-6 bg-brand-card rounded-3xl p-6 sm:p-8 border border-brand-border-light flex flex-col sm:grid sm:grid-cols-3 gap-4 items-center relative overflow-hidden group shadow-2xl"
           >
-            <div className="text-center p-4 rounded-2xl bg-brand-dark/50 border border-brand-border-light">
+            <div className="w-full text-center p-4 rounded-2xl bg-brand-dark/50 border border-brand-border-light">
               <div className="w-10 h-10 rounded-xl bg-brand-orange/10 flex items-center justify-center text-brand-orange mx-auto mb-2.5">
                 <Users className="w-5 h-5" />
               </div>
@@ -184,7 +184,7 @@ export default function Hero({ onScrollToSection }: HeroProps) {
               <p className="text-[10px] text-gray-400 mt-0.5 uppercase tracking-wider">Reseller Aktif</p>
             </div>
 
-            <div className="text-center p-4 rounded-2xl bg-brand-dark/50 border border-brand-border-light">
+            <div className="w-full text-center p-4 rounded-2xl bg-brand-dark/50 border border-brand-border-light">
               <div className="w-10 h-10 rounded-xl bg-brand-orange/10 flex items-center justify-center text-brand-orange mx-auto mb-2.5">
                 <Percent className="w-5 h-5" />
               </div>
@@ -192,7 +192,7 @@ export default function Hero({ onScrollToSection }: HeroProps) {
               <p className="text-[10px] text-gray-400 mt-0.5 uppercase tracking-wider">Diskon Pembelian</p>
             </div>
 
-            <div className="text-center p-4 rounded-2xl bg-brand-dark/50 border border-brand-border-light">
+            <div className="w-full text-center p-4 rounded-2xl bg-brand-dark/50 border border-brand-border-light">
               <div className="w-10 h-10 rounded-xl bg-brand-orange/10 flex items-center justify-center text-brand-orange mx-auto mb-2.5">
                 <Award className="w-5 h-5" />
               </div>
