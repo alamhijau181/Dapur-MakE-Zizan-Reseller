@@ -10,16 +10,10 @@ interface HeroProps {
 
 export default function Hero({ onScrollToSection }: HeroProps) {
   return (
-    <section id="home" className="relative py-20 lg:py-32 overflow-hidden border-b border-brand-muted isolate">
-      {/* Background overlay */}
-      <div className="absolute inset-0 z-0 opacity-10 pointer-events-none">
-        <img
-          src={bolenImg}
-          alt="Rustic Kitchen"
-          className="w-full h-full object-cover"
-          referrerPolicy="no-referrer"
-        />
-        <div className="absolute inset-0 bg-brand-dark/90"></div>
+    <section id="home" className="relative py-20 lg:py-32 overflow-hidden border-b border-brand-muted bg-black isolate scroll-mt-24">
+      {/* Background overlay - Clean solid dark with subtle center radial spotlight */}
+      <div className="absolute inset-0 z-0 pointer-events-none bg-black">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(249,115,22,0.03)_0%,transparent_70%)]"></div>
       </div>
 
       {/* Decorative Radial Gradient */}

@@ -11,7 +11,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section id="testimonials" className="py-24 bg-black border-b border-brand-muted relative overflow-hidden">
+    <section id="testimonials" className="py-24 bg-black border-b border-brand-muted relative overflow-hidden scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Testimonials Header */}
@@ -68,7 +68,7 @@ export default function Testimonials() {
         </div>
 
         {/* FAQ SECTION */}
-        <div id="faq" className="max-w-4xl mx-auto pt-16 border-t border-brand-border-light">
+        <div id="faq" className="max-w-4xl mx-auto pt-16 border-t border-brand-border-light scroll-mt-24">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <span className="text-[10px] text-brand-orange font-black uppercase tracking-widest">
               FAQ Reseller

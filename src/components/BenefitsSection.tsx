@@ -12,7 +12,7 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 
 export default function BenefitsSection() {
   return (
-    <section id="benefits" className="py-24 bg-black border-b border-brand-muted relative overflow-hidden isolate">
+    <section id="benefits" className="py-24 bg-black border-b border-brand-muted relative overflow-hidden isolate scroll-mt-24">
       {/* Background flare */}
       <div className="hidden md:block absolute top-1/2 right-10 -translate-y-1/2 w-48 h-48 bg-brand-orange/5 rounded-full blur-xl pointer-events-none"></div>
 

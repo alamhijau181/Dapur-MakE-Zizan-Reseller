@@ -235,7 +235,7 @@ export default function ResellerCalculator({
   };
 
   return (
-    <section id="calculator" className="py-24 bg-black relative border-b border-brand-muted overflow-hidden isolate">
+    <section id="calculator" className="py-24 bg-black relative border-b border-brand-muted overflow-hidden isolate scroll-mt-24">
       {/* Decorative Blur */}
       <div className="hidden md:block absolute top-1/2 left-0 -translate-y-1/2 w-48 h-48 bg-brand-orange/5 rounded-full blur-xl pointer-events-none"></div>
 

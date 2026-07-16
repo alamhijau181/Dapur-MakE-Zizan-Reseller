@@ -17,7 +17,7 @@ export default function MenuSection({ onAddToCalculator }: MenuSectionProps) {
   }, [activeCategory]);
 
   return (
-    <section id="menu" className="py-24 bg-black border-b border-brand-muted relative overflow-hidden">
+    <section id="menu" className="py-24 bg-black border-b border-brand-muted relative overflow-hidden scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
