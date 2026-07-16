@@ -89,7 +89,7 @@ export default function MenuSection({ onAddToCalculator }: MenuSectionProps) {
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-card/90 via-transparent to-transparent"></div>
                 
                 {/* Category Badge */}
-                <span className="absolute top-3 left-3 px-3 py-1 rounded-full bg-brand-dark/80 backdrop-blur-md text-[10px] font-extrabold uppercase tracking-widest text-brand-orange border border-brand-orange/20">
+                <span className="absolute top-3 left-3 px-3 py-1 rounded-full bg-brand-dark/95 text-[10px] font-extrabold uppercase tracking-widest text-brand-orange border border-brand-orange/20">
                   {item.category}
                 </span>
 

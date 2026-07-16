@@ -21,7 +21,7 @@ export default function Header({ onScrollToSection }: HeaderProps) {
 
   return (
     <header className="sticky top-4 z-50 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4">
-      <div className="bg-brand-card p-4 rounded-2xl border border-brand-orange/30 shadow-lg backdrop-blur-md bg-opacity-95">
+      <div className="bg-brand-card p-4 rounded-2xl border border-brand-orange/30 shadow-lg">
         <div className="flex items-center justify-between h-14">
           {/* Logo Brand */}
           <div className="flex items-center gap-2 sm:gap-3">
@@ -73,46 +73,46 @@ export default function Header({ onScrollToSection }: HeaderProps) {
             </button>
           </div>
         </div>
-      </div>
 
-      {/* Mobile Navigation Panel */}
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden border-t border-brand-muted bg-brand-card"
-          >
-            <div className="px-4 pt-2 pb-6 space-y-2">
-              {navLinks.map((link) => (
-                <button
-                  key={link.id}
-                  onClick={() => {
-                    onScrollToSection(link.id);
-                    setIsOpen(false);
-                  }}
-                  className="block w-full text-left px-4 py-3 rounded-xl text-base font-medium text-gray-300 hover:text-white hover:bg-brand-muted transition-all"
-                >
-                  {link.name}
-                </button>
-              ))}
-              <div className="pt-4 px-4">
-                <button
-                  onClick={() => {
-                    onScrollToSection("calculator");
-                    setIsOpen(false);
-                  }}
-                  className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl bg-brand-orange text-brand-dark font-bold hover:bg-brand-orange-dark transition-all shadow-[0_4px_12px_rgba(249,115,22,0.3)]"
-                >
-                  <ShoppingBag className="w-4 h-4" />
-                  Kalkulator Order
-                </button>
+        {/* Mobile Navigation Panel - Nested Inside Card */}
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ opacity: 0, height: 0 }}
+              className="md:hidden border-t border-brand-muted/50 mt-4 pt-4"
+            >
+              <div className="space-y-2 pb-2">
+                {navLinks.map((link) => (
+                  <button
+                    key={link.id}
+                    onClick={() => {
+                      onScrollToSection(link.id);
+                      setIsOpen(false);
+                    }}
+                    className="block w-full text-left px-4 py-3 rounded-xl text-base font-medium text-gray-300 hover:text-white hover:bg-brand-muted transition-all"
+                  >
+                    {link.name}
+                  </button>
+                ))}
+                <div className="pt-4">
+                  <button
+                    onClick={() => {
+                      onScrollToSection("calculator");
+                      setIsOpen(false);
+                    }}
+                    className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl bg-brand-orange text-brand-dark font-bold hover:bg-brand-orange-dark transition-all shadow-[0_4px_12px_rgba(249,115,22,0.3)]"
+                  >
+                    <ShoppingBag className="w-4 h-4" />
+                    Kalkulator Order
+                  </button>
+                </div>
               </div>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
     </header>
   );
 }

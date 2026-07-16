@@ -101,7 +101,7 @@ export default function Hero({ onScrollToSection }: HeroProps) {
             </div>
 
             {/* Discount tiers grid */}
-            <div className="z-10 bg-black/30 backdrop-blur-md p-4 rounded-2xl border border-white/10 mt-6">
+            <div className="z-10 bg-black/50 p-4 rounded-2xl border border-white/10 mt-6">
               <p className="text-[9px] uppercase font-bold tracking-widest text-white/60 mb-2.5">
                 POTONGAN RESELLER AKTIF
               </p>
@@ -170,7 +170,7 @@ export default function Hero({ onScrollToSection }: HeroProps) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="lg:col-span-6 bg-brand-card rounded-3xl p-6 sm:p-8 border border-brand-border-light grid grid-cols-3 gap-4 items-center relative overflow-hidden group shadow-2xl"
+            className="lg:col-span-6 bg-brand-card rounded-3xl p-6 sm:p-8 border border-brand-border-light grid grid-cols-1 sm:grid-cols-3 gap-4 items-center relative overflow-hidden group shadow-2xl"
           >
             <div className="text-center p-4 rounded-2xl bg-brand-dark/50 border border-brand-border-light">
               <div className="w-10 h-10 rounded-xl bg-brand-orange/10 flex items-center justify-center text-brand-orange mx-auto mb-2.5">
