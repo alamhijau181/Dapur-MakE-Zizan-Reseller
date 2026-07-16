@@ -32,8 +32,8 @@ export default function Testimonials() {
           {TESTIMONIALS.map((testi, idx) => (
             <motion.div
               key={testi.id}
-              initial={{ opacity: 0, y: 15 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               className="p-8 rounded-3xl bg-brand-card border border-brand-border-light hover:border-brand-orange/30 hover:scale-[1.01] relative transition-all group shadow-lg"

@@ -31,8 +31,8 @@ export default function Hero({ onScrollToSection }: HeroProps) {
           
           {/* Bento Card 1: Main narrative and core welcome (Left - Col Span 7) */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 0.6 }}
             className="lg:col-span-7 bg-brand-card rounded-3xl p-8 sm:p-10 border border-brand-border-light flex flex-col justify-between relative overflow-hidden group hover:border-brand-orange/30 transition-all duration-300 shadow-2xl"
           >
@@ -80,8 +80,8 @@ export default function Hero({ onScrollToSection }: HeroProps) {
 
           {/* Bento Card 2: Promotional Highlight with Orange Gradient (Right - Col Span 5) */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.15 }}
             className="lg:col-span-5 bg-gradient-to-br from-brand-orange-dark to-orange-950 rounded-3xl p-8 relative overflow-hidden flex flex-col justify-between group shadow-2xl border border-brand-orange/20"
           >
@@ -124,8 +124,8 @@ export default function Hero({ onScrollToSection }: HeroProps) {
 
           {/* Bento Card 3: Best Seller showcase (Row 2 - Col Span 6) */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.25 }}
             className="lg:col-span-6 bg-brand-card rounded-3xl p-6 sm:p-8 border border-brand-border-light flex flex-col sm:flex-row gap-6 relative overflow-hidden group shadow-2xl"
           >
@@ -167,8 +167,8 @@ export default function Hero({ onScrollToSection }: HeroProps) {
 
           {/* Bento Card 4: Stats Summary and Trust Indicators (Row 2 - Col Span 6) */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             className="lg:col-span-6 bg-brand-card rounded-3xl p-6 sm:p-8 border border-brand-border-light grid grid-cols-1 sm:grid-cols-3 gap-4 items-center relative overflow-hidden group shadow-2xl"
           >
