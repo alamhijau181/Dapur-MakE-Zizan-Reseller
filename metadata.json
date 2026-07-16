@@ -1,0 +1,6 @@
+{
+  "name": "Dapur Mak'e Zizan",
+  "description": "Landing page resmi Dapur Mak'e Zizan untuk program Reseller Bolen Pisang, Pizza, Sus Buah, dan Pizza Long dengan kalkulator pesanan otomatis dan integrasi WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
