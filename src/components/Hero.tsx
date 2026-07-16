@@ -174,7 +174,7 @@ export default function Hero({ onScrollToSection }: HeroProps) {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="lg:col-span-6 bg-brand-card rounded-3xl p-6 sm:p-8 border border-brand-border-light flex flex-col sm:grid sm:grid-cols-3 gap-4 items-center relative overflow-hidden group shadow-2xl"
+            className="lg:col-span-6 bg-brand-card rounded-3xl p-6 sm:p-8 border border-brand-border-light flex flex-col sm:grid sm:grid-cols-2 gap-4 items-center relative overflow-hidden group shadow-2xl"
           >
             <div className="w-full text-center p-4 rounded-2xl bg-brand-dark/50 border border-brand-border-light">
               <div className="w-10 h-10 rounded-xl bg-brand-orange/10 flex items-center justify-center text-brand-orange mx-auto mb-2.5">
@@ -182,14 +182,6 @@ export default function Hero({ onScrollToSection }: HeroProps) {
               </div>
               <p className="text-2xl font-black text-white">50+</p>
               <p className="text-[10px] text-gray-400 mt-0.5 uppercase tracking-wider">Reseller Aktif</p>
-            </div>
-
-            <div className="w-full text-center p-4 rounded-2xl bg-brand-dark/50 border border-brand-border-light">
-              <div className="w-10 h-10 rounded-xl bg-brand-orange/10 flex items-center justify-center text-brand-orange mx-auto mb-2.5">
-                <Percent className="w-5 h-5" />
-              </div>
-              <p className="text-2xl font-black text-brand-orange">s/d 20%</p>
-              <p className="text-[10px] text-gray-400 mt-0.5 uppercase tracking-wider">Diskon Pembelian</p>
             </div>
 
             <div className="w-full text-center p-4 rounded-2xl bg-brand-dark/50 border border-brand-border-light">
