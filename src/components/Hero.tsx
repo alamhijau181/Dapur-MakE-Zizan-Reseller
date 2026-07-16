@@ -10,11 +10,11 @@ interface HeroProps {
 
 export default function Hero({ onScrollToSection }: HeroProps) {
   return (
-    <section id="home" className="relative py-20 lg:py-32 overflow-hidden border-b border-brand-muted">
+    <section id="home" className="relative py-20 lg:py-32 overflow-hidden border-b border-brand-muted isolate">
       {/* Background overlay */}
       <div className="absolute inset-0 z-0 opacity-15 pointer-events-none">
         <img
-          src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=1200&auto=format&fit=crop"
+          src={bolenImg}
           alt="Rustic Kitchen"
           className="w-full h-full object-cover filter grayscale contrast-125"
           referrerPolicy="no-referrer"
@@ -23,7 +23,7 @@ export default function Hero({ onScrollToSection }: HeroProps) {
       </div>
 
       {/* Decorative Radial Gradient */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-orange/5 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-brand-orange/5 rounded-full blur-xl pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Main Bento Grid layout */}
@@ -32,12 +32,13 @@ export default function Hero({ onScrollToSection }: HeroProps) {
           {/* Bento Card 1: Main narrative and core welcome (Left - Col Span 7) */}
           <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="lg:col-span-7 bg-brand-card rounded-3xl p-8 sm:p-10 border border-brand-border-light flex flex-col justify-between relative overflow-hidden group hover:border-brand-orange/30 transition-all duration-300 shadow-2xl"
           >
             {/* Background spotlight */}
-            <div className="absolute top-0 right-0 w-80 h-80 bg-brand-orange/5 rounded-full blur-3xl pointer-events-none group-hover:bg-brand-orange/10 transition-colors"></div>
+            <div className="absolute top-0 right-0 w-48 h-48 bg-brand-orange/5 rounded-full blur-xl pointer-events-none group-hover:bg-brand-orange/10 transition-colors"></div>
 
             <div>
               <div className="flex flex-col-reverse sm:flex-row justify-between items-stretch sm:items-start gap-6 mb-6">
@@ -81,12 +82,13 @@ export default function Hero({ onScrollToSection }: HeroProps) {
           {/* Bento Card 2: Promotional Highlight with Orange Gradient (Right - Col Span 5) */}
           <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.15 }}
             className="lg:col-span-5 bg-gradient-to-br from-brand-orange-dark to-orange-950 rounded-3xl p-8 relative overflow-hidden flex flex-col justify-between group shadow-2xl border border-brand-orange/20"
           >
             {/* Background decorative circles */}
-            <div className="absolute -right-8 -bottom-8 w-64 h-64 bg-black/10 rounded-full blur-3xl"></div>
+            <div className="absolute -right-8 -bottom-8 w-32 h-32 bg-black/10 rounded-full blur-xl"></div>
             
             <div className="z-10">
               <span className="px-3 py-1 bg-white/10 border border-white/20 text-white rounded-full text-[9px] font-bold uppercase tracking-wider">
@@ -125,7 +127,8 @@ export default function Hero({ onScrollToSection }: HeroProps) {
           {/* Bento Card 3: Best Seller showcase (Row 2 - Col Span 6) */}
           <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.25 }}
             className="lg:col-span-6 bg-brand-card rounded-3xl p-6 sm:p-8 border border-brand-border-light flex flex-col sm:flex-row gap-6 relative overflow-hidden group shadow-2xl"
           >
@@ -168,7 +171,8 @@ export default function Hero({ onScrollToSection }: HeroProps) {
           {/* Bento Card 4: Stats Summary and Trust Indicators (Row 2 - Col Span 6) */}
           <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
             className="lg:col-span-6 bg-brand-card rounded-3xl p-6 sm:p-8 border border-brand-border-light grid grid-cols-1 sm:grid-cols-3 gap-4 items-center relative overflow-hidden group shadow-2xl"
           >

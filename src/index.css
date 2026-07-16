@@ -72,3 +72,9 @@
   border-radius: 1.5rem;
 }
 
+@media (max-width: 768px) {
+  .blur-3xl { filter: blur(20px); }
+  .blur-2xl { filter: blur(16px); }
+}
+
+

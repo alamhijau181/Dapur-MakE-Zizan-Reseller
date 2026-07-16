@@ -235,9 +235,9 @@ export default function ResellerCalculator({
   };
 
   return (
-    <section id="calculator" className="py-24 bg-black relative border-b border-brand-muted overflow-hidden">
+    <section id="calculator" className="py-24 bg-black relative border-b border-brand-muted overflow-hidden isolate">
       {/* Decorative Blur */}
-      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-96 h-96 bg-brand-orange/5 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-48 h-48 bg-brand-orange/5 rounded-full blur-xl pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -538,7 +538,7 @@ export default function ResellerCalculator({
           <div className="lg:col-span-4 sticky top-24">
             <div className="rounded-3xl border border-brand-border-light bg-brand-card p-6 sm:p-8 shadow-2xl relative overflow-hidden">
               {/* Highlight Background Flare */}
-              <div className="absolute top-0 right-0 w-32 h-32 bg-brand-orange/10 rounded-full blur-2xl pointer-events-none"></div>
+              <div className="absolute top-0 right-0 w-24 h-24 bg-brand-orange/10 rounded-full blur-xl pointer-events-none"></div>
 
               <h3 className="text-xl font-black text-white mb-6 pb-4 border-b border-brand-border-light flex items-center gap-2 uppercase italic tracking-tight">
                 <ShoppingBag className="w-5 h-5 text-brand-orange" />
